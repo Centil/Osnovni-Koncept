@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Concept.css">
+        <link rel="stylesheet" href="TestArea.css">
+    </head>
+    <body>
+        <div id="testarea">
+            <div class="tablock taclass">
+                <h3 class="tacentered">Žanri:</h3>
+                <div id="btns_tal_genre" class="tacentered">
+                    <button type="button" onclick="fillList(this, 0)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 0)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 0)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_genre" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taclass">
+                <h3 class="tacentered">Tipi žanrov:</h3>
+                <div id="btns_tal_tgenre" class="tacentered">
+                    <button type="button" onclick="fillList(this, 1)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 1)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 1)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_tgenre" class="talist">
+                </ul>
+            </div>
+            <div class="tablock tacont">
+                <h3 class="tacentered">Teme:</h3>
+                <div id="btns_tal_theme" class="tacentered">
+                    <button type="button" onclick="fillList(this, 2)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 2)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 2)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_theme" class="talist">
+                </ul>
+            </div>
+            <div class="tablock tacont">
+                <h3 class="tacentered">Motivi:</h3>
+                <div id="btns_tal_motive" class="tacentered">
+                    <button type="button" onclick="fillList(this, 3)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 3)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 3)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_motive" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taform">
+                <h3 class="tacentered">Načini igranja:</h3>
+                <div id="btns_tal_pstyle" class="tacentered">
+                    <button type="button" onclick="fillList(this, 4)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 4)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 4)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_pstyle" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taform">
+                <h3 class="tacentered">Povodi igranja:</h3>
+                <div id="btns_tal_intact" class="tacentered">
+                    <button type="button" onclick="fillList(this, 5)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 5)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 5)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_intact" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taform">
+                <h3 class="tacentered">Pogledi kamere:</h3>
+                <div id="btns_tal_vlook" class="tacentered">
+                    <button type="button" onclick="fillList(this, 6)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 6)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 6)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_vlook" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taform">
+                <h3 class="tacentered">Tipi grafike:</h3>
+                <div id="btns_tal_tgraph" class="tacentered">
+                    <button type="button" onclick="fillList(this, 7)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 7)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 7)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_tgraph" class="talist">
+                </ul>
+            </div>
+            <div class="tablock taform">
+                <h3 class="tacentered">Grafični stili:</h3>
+                <div id="btns_tal_sgraph" class="tacentered">
+                    <button type="button" onclick="fillList(this, 8)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 8)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 8)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_sgraph" class="talist">
+                </ul>
+            </div>
+            <div class="tablock tatargt">
+                <h3 class="tacentered">Kontrole:</h3>
+                <div id="btns_tal_cont" class="tacentered">
+                    <button type="button" onclick="fillList(this, 9)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 9)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 9)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_cont" class="talist">
+                </ul>
+            </div>
+            <div class="tablock tatargt">
+                <h3 class="tacentered">Platforme:</h3>
+                <div id="btns_tal_platf" class="tacentered">
+                    <button type="button" onclick="fillList(this, 10)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 10)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 10)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_platf" class="talist">
+                </ul>
+            </div>
+            <div class="tablock tatargt">
+                <h3 class="tacentered">Publika:</h3>
+                <div id="btns_tal_pub" class="tacentered">
+                    <button type="button" onclick="fillList(this, 11)">Deli</button>
+                    <button type="button" onclick="swapCards(this, 11)" disabled>Zamenjaj</button>
+                    <button type="button" onclick="keepCards(this, 11)" disabled>Obdrži</button>
+                    <span style="padding-top: 5px; display: block;">Št. zamenjav: </span>
+                    <span style="padding-top: 5px; display: block;">Maks. izbranih: </span>
+                </div>
+                    <ul id="list_tal_pub" class="talist">
+                </ul>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210mm" height="297mm" viewBox="0 0 1260 1782" id="page1" class="page">
+            <g id="page2_back">
+                <rect id="fbackground" class="paper" width="1260" height="1782"/>
+            </g>
+            <g id="page2_front">
+                <text id="fmtitle" class="mTitle" y="162" x="630" text-anchor="middle">
+                    <tspan id="fmspan" y="162" x="630" >FORMALIZACIJA IDEJE</tspan>
+                </text>
+                <g id="fstitle1">
+                    <text id="fstext1" class="sTitle" y="216" x="180">
+                        <tspan id="fsspan1" y="216" x="180">Klasifikacija:</tspan>
+                    </text>
+                    <rect id="fssquare1" y="200.825" x="159.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="fsunderline1" d="M180 222h160" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                </g>
+                <text id="fstitle1_infotext" class="info" y="216" x="420">
+                    <tspan id="tspan1908" y="216" x="420">(obsega izbiro žanra in pripadajočih tipov žanrov)</tspan>
+                </text>
+                <text id="fstext1_1" class="plain" y="282" x="180">
+                    <tspan id="fsspan1_1" y="282" x="180">1.) Žanr:</tspan>
+                </text>
+                <path id="fsline1_1" d="M300 288h360" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #Genre OF THE REQUESTED TEXT-->
+                <foreignObject y="262" x="300" height="26" width="360">
+                    <textarea id="fstext2_1a_line" class="plain emphasize line" rows="1" placeholder="...vnesi žaner..."></textarea>
+                </foreignObject> 
+                <text id="fstext1_1_1" class="plain" y="342" x="210">
+                    <tspan id="fsspan1_1_1"y="342" x="210">Zapiši kaj v žanru pogrešaš, bi dodal, </tspan>
+                    <tspan id="fsspan1_1_2" y="368.458" x="210">spremenil, razširil ali pa kako bi ga izboljšal:</tspan>
+                </text>
+                <g id="fsinfoarea1_1_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="fsline1_1_1a" d="M210 408h450"/>
+                    <path id="fsline1_1_1b" d="M210 438h450"/>
+                    <path id="fsline1_1_1c" d="M210 468h450"/>
+                    <path id="fsline1_1_1d" d="M210 498h450"/>
+                </g>
+                <!--LINE INPUT #User_input_1 OF THE REQUESTED TEXT-->
+                <foreignObject y="380" x="210" height="120" width="450">
+                    <textarea id="fstext2_1a_line" class="plain focus info" rows="4" placeholder="Dopolni..."></textarea>
+                </foreignObject> 
+                <g id="fsdescript_1_1">
+                    <text id="fsdescript1_1_text" class="description" y="276" x="930" text-anchor="middle">
+                        <tspan id="fsdescript1_1_span" y="282" x="930">Opis žanra:</tspan>
+                    </text>
+                    <path id="fsdescript1_1_line" d="M750 288h360" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                    <rect id="fsdescript1_1_rect" y="252" x="720" height="246" width="420" fill="none" stroke="#000" stroke-width="3"/>
+                    <!--AREA INPUT OF THE REQUESTED DESCRIPTION-->
+                    <foreignObject y="286" x="730" height="210" width="400">
+                        <textarea id="fsdescript1_1_area" class="plain focus" placeholder="Predstavi glavne značilnosti žanra..."></textarea>
+                    </foreignObject> 
+                </g>
+                <text id="fstext1_2" class="plain" y="552" x="180">
+                    <tspan id="fsspan1_2" y="552" x="180">2.) Tip(i) žanra:</tspan>
+                </text>
+                <path id="fsline1_2" d="M360 558h300" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #Sub-genre OF THE REQUESTED TEXT-->
+                <foreignObject y="532" x="360" height="26" width="300">
+                    <textarea id="fstext2_1a_line" class="plain emphasize line" rows="1" placeholder="...vnesi tip(a) žanra..."></textarea>
+                </foreignObject> 
+                <text id="fstext1_2_1" class="plain" y="612" x="210">
+                    <tspan id="fsspan1_2_1" y="612" x="210">Zapiši kako se tip(i) žanra povezuje, razširja, </tspan>
+                    <tspan id="fsspan1_2_2" y="638.458" x="210">dopolnjuje ali spreminja zgornji žanr:</tspan>
+                </text>
+                <g id="fsinfoarea1_2_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="fsline1_2_1a" d="M210 678h450"/>
+                    <path id="fsline1_2_1b" d="M210 708h450"/>
+                    <path id="fsline1_2_1c" d="M210 768h450"/>
+                    <path id="fsline1_2_1d" d="M210 738h450"/>
+                </g>
+                <!--LINE INPUT #User_input_2 OF THE REQUESTED TEXT-->
+                <foreignObject y="650" x="210" height="120" width="450">
+                    <textarea id="fstext2_1a_line" class="plain focus info" rows="4" placeholder="Dopolni..."></textarea>
+                </foreignObject> 
+                <g id="fsdescript_1_2">
+                    <text id="fsdescript_1_2_text" class="description" y="546" x="930" text-anchor="middle">
+                        <tspan id="fsdescript_1_2_span" y="552" x="930">Opis tipa(ov) žanra:</tspan>
+                    </text>
+                    <path id="fsdescript_1_2_line" d="M750 558h360" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                    <rect id="fsdescript_1_2_rect" y="522" x="720" height="246" width="420" fill="none" stroke="#000" stroke-width="3"/>
+                    <!--AREA INPUT OF THE REQUESTED DESCRIPTION-->
+                    <foreignObject y="556" x="730" height="210" width="400">
+                        <textarea id="fsdescript_1_2_area" class="plain focus" placeholder="Predstavi glavne značilnosti tipa(ov) žanra..."></textarea>
+                    </foreignObject> 
+                </g>
+                <text id="fstext1_3" class="plain" y="822" x="180">
+                    <tspan id="fsspan1_3" y="822" x="180">3.) Naštej nekaj asociacij videoiger, ki bi jih lahko uvrstil med dani žaner in tip(e) žanra:</tspan>
+                </text>
+                <g id="fsinfoarea1_3_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="fsline1_3_1a" d="M210 858h900"/>
+                    <path id="fsline1_3_1b" d="M210 888h900"/>
+                </g>
+                <!--LINE INPUT #User_input_2 OF THE REQUESTED TEXT-->
+                <foreignObject y="830" x="210" height="60" width="840">
+                    <textarea id="fstext2_1a_line" class="plain focus info" rows="2" placeholder="Dopolni..."></textarea>
+                </foreignObject> 
+                <g id="fstitle2">
+                    <text id="fstext2" class="sTitle" y="936" x="180">
+                        <tspan id="fsspan2" y="936" x="180">Vsebina:</tspan>
+                    </text>
+                    <rect id="fssquare2" y="920.825" x="159.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="fsunderline2" d="M180 942h108" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                </g>
+                <text id="fstitle2_infotext" class="info" y="936" x="360">
+                    <tspan id="fstitle1_infospan" y="936" x="360">(obesga izbiro in opise tem ter motivov za izbrane žanre)</tspan>
+                </text>
+                <text id="fstext2_1a" class="plain" y="1002" x="150">
+                    <tspan id="fsspan2_1a" y="1002" x="150">Tema A:</tspan>
+                </text>
+                <path id="fsline2_1a" d="M270 1008h330" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #1 (2_1a) OF THE REQUESTED TEXT-->
+                <foreignObject y="982" x="270" height="26" width="330">
+                    <textarea id="fstext2_1a_line" class="plain emphasize line" rows="1" placeholder="...vnesi temo..."></textarea>
+                </foreignObject> 
+                <rect id="fsrect2_1a" y="1032" x="150" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #1 (2_1a) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1036" x="154" height="140" width="472">
+                    <textarea id="fstext2_1a_area" class="plain focus content" placeholder="Predstavi izbrano temo..."></textarea>
+                </foreignObject> 
+                <text id="fstext2_1b" class="plain" y="1002" x="660">
+                    <tspan id="fsspan2_1b" y="1002" x="660">Tema B:</tspan>
+                </text>
+                <path id="fsline2_1b" d="M780 1008h330" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #2 (2_1b) OF THE REQUESTED TEXT-->
+                <foreignObject y="982" x="780" height="26" width="330">
+                    <textarea id="fstext2_1b_line" class="plain emphasize line" rows="1" placeholder="...vnesi temo..."></textarea>
+                </foreignObject> 
+                <rect id="fsrect2_1b" y="1032" x="660" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #2 (2_1b) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1036" x="664" height="140" width="472">
+                    <textarea id="fstext2_1b_area" class="plain focus content" placeholder="Predstavi izbrano temo..."></textarea>
+                </foreignObject> 
+                <text id="fstext2_2a" class="plain" y="1242" x="150">
+                    <tspan id="fsspan2_2a" y="1242" x="150">Motiv A - 1:</tspan>
+                </text>
+                <path id="fsline2_2a" d="M300 1248h300" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #3 (2_2a) OF THE REQUESTED TEXT-->
+                <foreignObject y="1222" x="300" height="26" width="300">
+                    <textarea id="fstext2_2a_line" class="plain line" rows="1" placeholder="...vnesi motiv teme..."></textarea>
+                </foreignObject> 
+                <rect id="fsrect2_2a" y="1272" x="150" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #3 (2_2a) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1276" x="154" height="140" width="472">
+                    <textarea id="fstext2_2a_area" class="plain focus content" placeholder="Predstavi in ustrezno umesti motiv..."></textarea>
+                </foreignObject> 
+                <text id="fstext2_2b" class="plain" y="1242" x="660">
+                    <tspan id="fsspan2_2b" y="1242" x="660">Motiv B - 1:</tspan>
+                </text>
+                <path id="fsline2_2b" d="M810 1248h300" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #4 (2_2b) OF THE REQUESTED TEXT-->
+                <foreignObject y="1222" x="810" height="26" width="300">
+                    <textarea id="fstext2_2b_line" class="plain line" rows="1" placeholder="...vnesi motiv teme..."></textarea>
+                </foreignObject> 
+                <rect id="fsrect2_2b" y="1272" x="660" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #4 (2_2b) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1276" x="664" height="140" width="472">
+                    <textarea id="fstext2_2b_area" class="plain focus content" placeholder="Predstavi in ustrezno umesti motiv..."></textarea>
+                </foreignObject> 
+                <text id="fstext2_3a" class="plain" y="1482" x="150">
+                    <tspan id="fsspan2_3a" y="1482" x="150">Motiv A - 2:</tspan>
+                </text>
+                <path id="fsline2_3a" d="M300 1488h300" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #5 (2_3a) OF THE REQUESTED TEXT-->
+                <foreignObject y="1462" x="300" height="26" width="300">
+                    <textarea id="fstext2_3a_line" class="plain line" rows="1" placeholder="...vnesi motiv teme..."></textarea>
+                </foreignObject> 
+                <rect id="fsrect2_3a" y="1512" x="150" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #5 (2_3a) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1516" x="154" height="140" width="472">
+                    <textarea id="fstext2_3a_area" class="plain focus content" placeholder="Predstavi in ustrezno umesti motiv..."></textarea>
+                </foreignObject> 
+                <text id="fstext2_3b" class="plain" y="1482" x="660">
+                    <tspan id="fsspan2_3b" y="1482" x="660">Motiv B - 2:</tspan>
+                </text>
+                <path id="fsline2_3b" d="M810 1488h300" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                <!--LINE INPUT #6 (2_3b) OF THE REQUESTED TEXT-->
+                <foreignObject y="1462" x="810" height="26" width="300">
+                    <textarea id="fstext2_3b_line" class="plain line" rows="1" placeholder="...vnesi motiv teme..."></textarea>
+                </foreignObject>
+                <rect id="fsrect2_3b" y="1512" x="660" height="150" width="480" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA INPUT #6 (2_3b) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="1516" x="664" height="140" width="472">
+                    <textarea id="fstext2_3b_area" class="plain focus content" placeholder="Predstavi in ustrezno umesti motiv..."></textarea>
+                </foreignObject> 
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210mm" height="297mm" viewBox="0 0 1260 1782" id="page2" class="page">
+            <style>
+            </style>
+            <g id="page2_back">
+                <rect id="cbackground" class="paper" width="1260" height="1782"/>
+            </g>
+            <g id="page2_front">
+                <text id="cmtitle" class="mTitle" y="162" x="630" text-anchor="middle">
+                    <tspan id="cmspan" y="162" x="630">KONCEPT IDEJE</tspan>
+                </text>
+                <g id="cstitle1">
+                    <text id="cstext1" class="sTitle" y="246" x="180">
+                        <tspan id="csspan1" y="246" x="180">Lastnosti in zahteve videoigre:</tspan>
+                    </text>
+                    <rect id="cssquare1" y="230.825" x="159.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="csunderline1" d="M180 252l390-.5" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                </g>
+                <g id="cslabel1_1">
+                    <text id="cstext1_1" class="plain" y="312" x="210">
+                        <tspan id="csspan1_1" y="312" x="210">KLASIFIKACIJA:</tspan>
+                    </text>
+                    <path id="csline1_1" d="M192 306h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <text id="cstext1_1_1" class="plain" y="372" x="210">
+                    <tspan id="csspan1_1_1" y="372" x="210">žanr:</tspan>
+                </text>
+                <g id="csinfoarea1_1_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_1_1a" d="M300 378h300"/>
+                    <path id="csline1_1_1b" d="M300 408h300"/>
+                    <!--LINE INPUT #Infoarea_input_1 OF THE REQUESTED TEXT-->
+                    <foreignObject y="350" x="300" height="60" width="300">
+                        <textarea id="csinfoarea1_1_1_line" class="plain emphasize info" rows="2" placeholder="Vnesi izbran žaner..."></textarea>
+                    </foreignObject> 
+                </g>
+                <text id="cstext1_1_2" class="plain" y="432" x="210">
+                    <tspan id="csspan1_1_2" y="432" x="210">tip(i):</tspan>
+                </text>
+                <g id="csinfoarea1_1_2" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_1_2a" d="M300 438h300"/>
+                    <path id="csline1_1_2b" d="M300 468h300"/>
+                    <!--LINE INPUT #Infoarea_input_2 OF THE REQUESTED TEXT-->
+                    <foreignObject y="410" x="300" height="60" width="300">
+                        <textarea id="csinfoarea1_1_2_line" class="plain emphasize info" rows="2" placeholder="Vnesi izbran(a) tip(a) žanra..."></textarea>
+                    </foreignObject> 
+                </g>
+                <g id="cslabel1_2">
+                    <text id="cstext1_2" class="plain" y="522" x="210">
+                        <tspan id="csspan1_2" y="522" x="210">VSEBINA:</tspan>
+                    </text>
+                    <path id="csline1_2" d="M192 516h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <text id="cstext1_2_1" class="plain" y="582" x="210">
+                    <tspan id="csspan1_2_1" y="582" x="210">tema(e):</tspan>
+                </text>
+                <g id="csinfoarea1_2_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_2_1a" d="M330 588h270"/>
+                    <path id="csline1_2_1b" d="M330 618h270"/>
+                    <!--LINE INPUT #Infoarea_input_3 OF THE REQUESTED TEXT-->
+                    <foreignObject y="560" x="330" height="60" width="270">
+                        <textarea id="csinfoarea1_2_1_line" class="plain emphasize info" rows="2" placeholder="Vnesi izbrano temo..."></textarea>
+                    </foreignObject> 
+                </g>
+                <text id="cstext1_2_2" class="plain" y="642" x="210">
+                    <tspan id="csspan1_2_2" y="642" x="210">motiv(i):</tspan>
+                </text>
+                <g id="csinfoarea1_2_2" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_2_2a" d="M330 648h270"/>
+                    <path id="csline1_2_2b" d="M330 678h270"/>
+                    <!--LINE INPUT #Infoarea_input_4 OF THE REQUESTED TEXT-->
+                    <foreignObject y="620" x="330" height="60" width="270">
+                        <textarea id="csinfoarea1_2_2_line" class="plain emphasize info" rows="2" placeholder="Vnesi izbran motiv..."></textarea>
+                    </foreignObject> 
+                </g>
+                <g id="cslabel1_3">
+                    <text id="cstext1_3" class="plain" y="312" x="690">
+                        <tspan id="csspan1_3" y="312" x="690">OBLIKA:</tspan>
+                    </text>
+                    <path id="csline1_3" d="M672 306h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <text id="cstext1_3_1" class="plain" y="372" x="690">
+                    <tspan id="csspan1_3_1" y="372" x="690">način igranja:</tspan>
+                </text>
+                <text id="cstext1_3_2" class="plain" y="402" x="690">
+                    <tspan id="csspan1_3_2" y="402" x="690">povod igranja:</tspan>
+                </text>
+                <text id="cstext1_3_3" class="plain" y="432" x="690">
+                    <tspan id="csspan1_3_3" y="432" x="690">pogled kamere:</tspan>
+                </text>
+                <text id="cstext_1_3_4" class="plain"="462" x="690">
+                    <tspan id="csspan1_3_4" y="462" x="690">tip grafike:</tspan>
+                </text>
+                <text id="cstext1_3_5" class="plain" y="492" x="690">
+                    <tspan id="csspan1_3_5" y="492" x="690">grafični stil:</tspan>
+                </text>
+                <g id="csinfoarea1_3" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_3a" d="M870 378h240"/>
+                    <!--LINE INPUT #Infoarea_input_3a OF THE REQUESTED TEXT-->
+                    <foreignObject y="350" x="870" height="30" width="240">
+                        <textarea id="csinfoarea1_3_a_line" class="plain emphasize info" rows="1" placeholder="Vnesi ..."></textarea>
+                    </foreignObject>
+                    <path id="csline1_3b" d="M870 408h240"/>
+                    <!--LINE INPUT #Infoarea_input_3b OF THE REQUESTED TEXT-->
+                    <foreignObject y="380" x="870" height="30" width="240">
+                        <textarea id="csinfoarea1_3_b_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                    </foreignObject>
+                    <path id="csline1_3c" d="M870 438h240"/>
+                    <!--LINE INPUT #Infoarea_input_3c OF THE REQUESTED TEXT-->
+                    <foreignObject y="410" x="870" height="30" width="240">
+                        <textarea id="csinfoarea1_3_c_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                    </foreignObject>
+                    <path id="csline1_3d" d="M840 468h270"/>
+                    <!--LINE INPUT #Infoarea_input_3d OF THE REQUESTED TEXT-->
+                    <foreignObject y="440" x="840" height="30" width="270">
+                        <textarea id="csinfoarea1_3_d_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                    </foreignObject>
+                    <path id="csline1_3e" d="M840 498h270"/>
+                    <!--LINE INPUT #Infoarea_input_3e OF THE REQUESTED TEXT-->
+                    <foreignObject y="470" x="840" height="30" width="270">
+                        <textarea id="csinfoarea1_3_e_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                    </foreignObject>
+                </g>
+                <g id="cslabel1_4">
+                    <text id="cstext1_4" class="plain" y="552" x="690">
+                        <tspan id="csspan1_4" y="552" x="690">USMERITEV:</tspan>
+                    </text>
+                    <path id="csline1_4" d="M672 546h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <text id="cstext1_4_1" class="plain" y="612" x="690">
+                    <tspan id="scspan1_4_1" y="612" x="690">kontrole:</tspan>
+                </text>
+                <text id="cstext1_4_2" class="plain" y="642" x="690">
+                    <tspan id="scspan1_4_2" y="642" x="690">platforme:</tspan>
+                </text>
+                <text id="cstext1_4_3" class="plain" y="672" x="690">
+                    <tspan id="scspan1_4_3" y="672" x="690">publika:</tspan>
+                </text>
+                <g id="csinfoarea1_4" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="csline1_4a" d="M810 618h300"/>
+                    <!--LINE INPUT #Infoarea_input_3e OF THE REQUESTED TEXT-->
+                    <foreignObject y="590" x="810" height="30" width="300">
+                            <textarea id="csinfoarea1_4_a_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                        </foreignObject>
+                    <path id="csline1_4b" d="M810 648h300"/>
+                    <!--LINE INPUT #Infoarea_input_3e OF THE REQUESTED TEXT-->
+                    <foreignObject y="620" x="810" height="30" width="300">
+                            <textarea id="csinfoarea1_4_b_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                        </foreignObject>
+                    <path id="csline1_4c" d="M810 678h300"/>
+                    <!--LINE INPUT #Infoarea_input_3e OF THE REQUESTED TEXT-->
+                    <foreignObject y="650" x="810" height="30" width="300">
+                            <textarea id="csinfoarea1_4_c_line" class="plain emphasize info" rows="1" placeholder="Vnesi..."></textarea>
+                        </foreignObject>
+                </g>
+                <path d="M630 282v390" id="cseparator_1" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                <g id="cstitle2">
+                    <text id="cstext2" class="sTitle" y="726" x="180">
+                        <tspan id="csspan2" y="726" x="180">Predstavitev ideje:</tspan>
+                    </text>
+                    <rect id="cssquare2" y="710.825" x="159.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="csunderline2" d="M180 732h234" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                </g>
+                <rect id="csrect2a" y="762" x="150" height="390" width="450" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA DESCRIPTION #1 (2a) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="766" x="154" height="382" width="442">
+                    <textarea id="csrect2a_area" class="plain focus content" placeholder="Predstavi idejo videoigre glede na izbrane lastnosti in zahteve..."></textarea>
+                </foreignObject> 
+                <g id="cstitle3">
+                    <text id="cstext3" class="sTitle" y="726" x="690">
+                        <tspan id="csspan3" y="726" x="690" font-size="25.4">Opis ideje:</tspan>
+                    </text>
+                    <rect id="cssquare3" y="710.825" x="669.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="csunderline3" d="M690 732h132" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                </g>
+                <rect id="csrect3a" y="762" x="660" height="390" width="450" fill="none" stroke="#000" stroke-width="3"/>
+                <!--AREA DESCRIPTION #2 (3a) OF THE REQUESTED DESCRIPTION-->
+                <foreignObject y="766" x="664" height="382" width="442">
+                    <textarea id="csrect3a_area" class="plain focus content" placeholder="Podaj opis videoigre glede na izbrane lastnosti in zahteve..."></textarea>
+                </foreignObject> 
+                <g id="cstitle4">
+                    <text id="cstext4" class="sTitle" y="1206" x="660">
+                        <tspan id="csspan4" y="1206" x="660">VandenBerghe QR Tabela Okusov:</tspan>
+                    </text>
+                    <rect id="cssquare4" y="1190.825" x="639.175" height="12" width="12" opacity="1" stroke-width="1.5"/>
+                    <path id="csunderline4" d="M660 1212h432" fill="none" fill-rule="evenodd" stroke="#000"/>
+                </g>
+                <g id="cslabel4_1">
+                    <text id="cstext4_1" class="plain" y="1254" x="660">
+                        <tspan id="csspan4_1" y="1254" x="660">Domene igranja:</tspan>
+                    </text>
+                    <path id="csline4_1" d="M642 1248h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <text id="ctextinfo_novelty" class="plain" y="1296" x="660">
+                    <tspan id="cspaninfo_novelty" y="1296" x="660">N → Noviteta</tspan>
+                </text>
+                <text id="ctextinfo_challenge" class="plain" y="1326" x="660">
+                    <tspan id="cspaninfo_challenge" y="1326" x="660">C → Izziv</tspan>
+                </text>
+                <text id="ctextinfo_stimulation" class="plain" y="1356" x="660">
+                    <tspan id="cspaninfo_stimulation" y="1356" x="660">S → Stimulacija</tspan>
+                </text>
+                <text id="ctextinfo_harmony" class="plain" y="1386" x="660">
+                    <tspan id="cspaninfo_harmony" y="1386" x="660">H → Harmonija</tspan>
+                </text>
+                <text id="cstextinfo_zones" class="info small" y="1416" x="660">
+                    <tspan id="cspaninfo_zones_1" y="1416" x="660">(vsaka pokriva 3 cone)</tspan>
+                    <tspan id="cspaninfo_zones_2" y="1437.167" x="660">(vsaka ima 4 vidike)</tspan>
+                    <tspan id="cspaninfo_zones_3" y="1458.333" x="660">(vidiki so grupirani)</tspan>
+                </text>
+                <path d="M870 1272v180" id="clineinfo_separator" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                <g id="cslabel4_2">
+                    <text id="cstext4_2" class="plain" y="1254" x="900">
+                        <tspan id="csspan4_2" y="1254" x="900">Vidiki domen:</tspan>
+                    </text>
+                    <path id="csline4_2" d="M882 1248h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <g id="cinfobox_1">
+                    <rect id="cinfobox_1_box" y="1272" x="900" height="90" width="90" opacity="1" fill="none" stroke="#000" stroke-width="3"/>
+                    <path id="cinfobox_1_linesep" d="M990 1317h-90" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" stroke-dasharray="9,9"/>
+                    <text id="cinfobox_1_text_1" class="infoChart emphasize" y="1302" x="945" text-anchor="middle">
+                        <tspan id="cinfobox_1_span_1" y="1302" x="945">ZGORAJ</tspan>
+                    </text>
+                    <text id="cinfobox_1_text_2" class="infoChart emphasize" y="1344" x="945" text-anchor="middle">
+                        <tspan id="cinfobox_1_span_2" y="1344" x="945">SPODAJ</tspan>
+                    </text>
+                </g>
+                <g id="cinfobox_2">
+                    <rect id="cinfobox_2_box" y="1272" x="1020" height="90" width="90" opacity="1" fill="none" stroke="#000" stroke-width="3"/>
+                    <path id="cinfobox_2_linesep" d="M1065 1272v90" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" stroke-dasharray="9,9"/>
+                    <text id="cinfobox_2_text_1" class="infoChart emphasize vertical" y="1317" x="1038" writing-mode="tb-rl" text-anchor="middle">
+                        <tspan id="cinfobox_2_span_1" y="1317" x="1038">LEVO</tspan>
+                    </text>
+                    <text id="cinfobox_2_text_2" class="infoChart emphasize vertical" y="1317" x="1086" writing-mode="tb-rl" text-anchor="middle">
+                        <tspan id="cinfobox_2_span_2" y="1317" x="1086">DESNO</tspan>
+                    </text>
+                </g>
+                <g id="cinfograph">
+                    <path id="cinfograph_linebottom" d="M882 1446h252" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                    <path id="cinfograph_curve" d="M882 1440c90 0 96-60 126-60s30 60 126 60" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5"/>
+                    <path id="cinfograph_linesep_1" d="M918 1446v-66" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" stroke-dasharray="6,6"/>
+                    <path id="cinfograph_linesep_2" d="M960 1446v-66" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" stroke-dasharray="6,6"/>
+                    <path id="cinfograph_linesep_3" d="M1008 1446v-66" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" stroke-dasharray="6,6"/>
+                    <path id="cinfograph_linesep_4" d="M1056 1446v-66" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" stroke-dasharray="6,6"/>
+                    <path id="cinfograph_linesep_5" d="M1098 1446v-66" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" stroke-dasharray="6,6"/>
+                    <text id="cinfograph_text_1" class="plain emphasize smallest" y="1416" x="888">
+                        <tspan id="cinfograph_span_1" y="1416" x="888">5%</tspan>
+                    </text>
+                    <text id="cinfograph_text_2" class="plain emphasize smallest" y="1416" x="924">
+                        <tspan id="cinfograph_span_2" y="1416" x="924">15%</tspan>
+                    </text>
+                    <text id="cinfograph_text_3" class="plain emphasize smallest"  y="1416" x="972">
+                        <tspan id="cinfograph_span_3" y="1416" x="972">30%</tspan>
+                    </text>
+                    <text id="cinfograph_text_4" class="plain emphasize smallest alignEnd" y="1416" x="1044" text-anchor="end">
+                        <tspan id="cinfograph_span_4" y="1416" x="1044">30%</tspan>
+                    </text>
+                    <text id="cinfograph_text_5" class="plain emphasize smallest alignEnd" y="1416" x="1092" text-anchor="end">
+                        <tspan id="cinfograph_span_5" y="1416" x="1092">15%</tspan>
+                    </text>
+                    <text id="cinfograph_text_6" class="plain emphasize smallest alignEnd" y="1416" x="1128" text-anchor="end">
+                        <tspan id="cinfograph_span_6" y="1416" x="1128">5%</tspan>
+                    </text>
+                    <text id="cinfograph_text_left" class="plain emphasize smallest" y="1464" x="882">
+                        <tspan id="cinfograph_span_left" y="1464" x="882">ZGORAJ / LEVO</tspan>
+                    </text>
+                    <text id="cinfograph_text_right" class="plain emphasize smallest alignEnd" y="1464" x="1134" text-anchor="end">
+                        <tspan id="cinfograph_span_right" y="1464" x="1134">SPODAJ / DESNO</tspan>
+                    </text>
+                </g>
+                <g id="cslabel4_3">
+                    <text id="cstext4_3" class="plain" y="1500" x="660">
+                        <tspan id="csspan4_3a" y="1500" x="660">Tabela pregleda lastnosti vidikov, faktorjev</tspan>
+                        <tspan id="csspan4_3b" y="1526.458" x="660">zanimanja in deleža populacije za cone:</tspan>
+                    </text>
+                    <path id="csline4_3" d="M642 1494h12" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3"/>
+                </g>
+                <g id="cinfotable" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5">
+                    <path id="cinfotable_line_main" d="M660 1572.75h480"/>
+                    <path id="cinfotable_line_1" d="M756 1542v120"/>
+                    <path id="cinfotable_line_2" d="M762 1542v120"/>
+                    <path id="cinfotable_line_3" d="M930 1542v120"/>
+                    <path id="cinfotable_line_4" d="M1056 1542v120"/>
+                </g>
+                <g id="cinfocolumn_1">
+                    <text id="cinfocolumn_1_text_main" class="plain" y="1566" x="660">
+                        <tspan id="cinfocolumn_1_span_main" y="1566" x="660">cone</tspan>
+                    </text>
+                    <text id="cinfocolumn_1_text_1" class="plain" y="1596" x="660">
+                        <tspan id="cinfocolumn_1_span_1" y="1596" x="660">notranja</tspan>
+                    </text>
+                    <text id="cinfocolumn_1_text_2" class="plain" y="1626" x="660">
+                        <tspan id="cinfocolumn_1_span_2" y="1626" x="660">osrednja</tspan>
+                    </text>
+                    <text id="cinfocolumn_1_text_3" class="plain" y="1656" x="660">
+                        <tspan id="cinfocolumn_1_span_3" y="1656" x="660">zunanja</tspan>
+                    </text>
+                </g>
+                <g id="cinfocolumn_2">
+                    <text id="cinfocolumn_2_text_main" class="plain" y="1566" x="768">
+                        <tspan id="cinfocolumn_2_span_main" y="1566" x="768">lastnost vidika</tspan>
+                    </text>
+                    <text id="cinfocolumn_2_text_1" class="plain" y="1596" x="768">
+                        <tspan id="cinfocolumn_2_span_1" y="1596" x="768">bo vsebovan</tspan>
+                    </text>
+                    <text id="cinfocolumn_2_text_2" class="plain" y="1626" x="768">
+                        <tspan id="cinfocolumn_2_span_2" y="1626" x="768">bo zelo dober</tspan>
+                    </text>
+                    <text id="cinfocolumn_2_text_3" class="plain" y="1656" x="768">
+                        <tspan id="cinfocolumn_2_span_3" y="1656" x="768">bo najboljši</tspan>
+                    </text>
+                </g>
+                <g id="cinfocolumn_3">
+                    <text id="cinfocolumn_3_text_main" class="plain" y="1566" x="936">
+                        <tspan id="cinfocolumn_3_span_main" y="1566" x="936">zanimanje</tspan>
+                    </text>
+                    <text id="cinfocolumn_3_text_1" class="plain" y="1596" x="936">
+                        <tspan id="cinfocolumn_3_span_1" y="1596" x="936">nevtralen</tspan>
+                    </text>
+                    <text id="cinfocolumn_3_text_2" class="plain" y="1626" x="936">
+                        <tspan id="cinfocolumn_3_span_2" y="1626" x="936">interesiran</tspan>
+                    </text>
+                    <text id="cinfocolumn_3_text_3" class="plain" y="1656" x="936">
+                        <tspan id="cinfocolumn_3_span_3" y="1656" x="936">navdušen</tspan>
+                    </text>
+                </g>
+                <g id="cinfocolumn_4">
+                    <text id="cinfocolumn_4_text_main" class="plain" y="1566" x="1062">
+                        <tspan id="cinfocolumn_4_span_main" y="1566" x="1062">delež</tspan>
+                    </text>
+                    <text id="cinfocolumn_4_text_1" class="plain" y="1596" x="1062">
+                        <tspan id="cinfocolumn_4_span_1" y="1596" x="1062">velik</tspan>
+                    </text>
+                    <text id="cinfocolumn_4_text_2" class="plain" y="1626" x="1062">
+                        <tspan id="cinfocolumn_4_span_2" y="1626" x="1062">srednji</tspan>
+                    </text>
+                    <text id="cinfocolumn_4_text_3" class="plain" y="1656" x="1062">
+                        <tspan id="cinfocolumn_4_span_3" y="1656" x="1062">majhen</tspan>
+                    </text>
+                </g>
+                <g id="cqrtable">
+                    <rect id="cqrtable_border" y="1182" x="120" height="480" width="480" fill="#fff" stroke="#000" stroke-width="3"/>
+                    <path id="cqrtable_separator_1" d="M120 1422h480" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+                    <path id="cqrtable_separator_2" d="M360 1182v480" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+                    <g id="cqrtable_domain" stroke="#000" stroke-opacity="0" stroke-width="0" opacity="1">
+                        <rect id="cqrtable_domain_1" class="fillable1" y="1212" x="150" height="0" width="0" fill="#5aa02c"/>
+                        <rect id="cqrtable_domain_2" class="fillable2" y="1212" x="390" height="0" width="0" fill="#0066ff"/>
+                        <rect id="cqrtable_domain_3" class="fillable3" y="1452" x="390" height="0" width="0" fill="#ff6600"/>
+                        <rect id="cqrtable_domain_4" class="fillable4" y="1452" x="150" height="0" width="0" fill="#944dff"/>
+                    </g>
+                    <g id="cqrtable_areainfo_1" text-anchor="middle">
+                        <text id="cqrtable_areainfo_1_text_1" class="infoChart" y="1307" x="240">
+                            <tspan id="cqrtable_areainfo_1_span_1" y="1307" x="240">60%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_1_text_2" class="infoChart" y="1262" x="201">
+                            <tspan id="cqrtable_areainfo_1_span_2" y="1262" x="201">30%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_1_text_3" class="infoChart" y="1232" x="171">
+                            <tspan id="cqrtable_areainfo_1_span_3" y="1232" x="171">10%</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_areainfo_2" text-anchor="middle">
+                        <text id="cqrtable_areainfo_2_text_1" class="infoChart" y="1307" x="480">
+                            <tspan id="cqrtable_areainfo_2_span_1" y="1307" x="480">60%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_2_text_2" class="infoChart" y="1262" x="519">
+                            <tspan id="cqrtable_areainfo_2_span_2" y="1262" x="519">30%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_2_text_3" class="infoChart" y="1232" x="549">
+                            <tspan id="cqrtable_areainfo_2_span_3" y="1232" x="549">10%</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_areainfo_3" text-anchor="middle">
+                        <text id="cqrtable_areainfo_3_text_1" class="infoChart" y="1547" x="480">
+                            <tspan id="cqrtable_areainfo_3_span_1" y="1547" x="480">60%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_3_text_2" class="infoChart" y="1592" x="519">
+                            <tspan id="cqrtable_areainfo_3_span_2" y="1592" x="519">30%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_3_text_3" class="infoChart" y="1622" x="549">
+                            <tspan id="cqrtable_areainfo_3_span_3" y="1622" x="549">10%</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_areainfo_4" text-anchor="middle">
+                        <text id="cqrtable_areainfo_4_text_1" class="infoChart" y="1547" x="240">
+                            <tspan id="cqrtable_areainfo_4_span_1" y="1547" x="240">60%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_4_text_2" class="infoChart" y="1592" x="201">
+                            <tspan id="cqrtable_areainfo_4_span_2" y="1592" x="201">30%</tspan>
+                        </text>
+                        <text id="cqrtable_areainfo_4_text_3" class="infoChart" y="1622" x="171">
+                            <tspan id="cqrtable_areainfo_4_span_3" y="1622" x="171">10%</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_domain_1_facet" stroke="#000" stroke-opacity="0" stroke-width="0">
+                        <rect id="cqrtable_domain_1_facet_TL_1" class="hoverable1" y="1212" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_2" class="hoverable1" y="1212" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_3" class="hoverable1" y="1212" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_4" class="hoverable1" y="1242" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_5" class="hoverable1" y="1242" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_6" class="hoverable1" y="1242" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_7" class="hoverable1" y="1272" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_8" class="hoverable1" y="1272" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TL_9" class="hoverable1" y="1272" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_1" class="hoverable1" y="1212" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_2" class="hoverable1" y="1212" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_3" class="hoverable1" y="1212" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_4" class="hoverable1" y="1242" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_5" class="hoverable1" y="1242" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_6" class="hoverable1" y="1242" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_7" class="hoverable1" y="1272" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_8" class="hoverable1" y="1272" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_TR_9" class="hoverable1" y="1272" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_1" class="hoverable1" y="1302" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_2" class="hoverable1" y="1302" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_3" class="hoverable1" y="1302" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_4" class="hoverable1" y="1332" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_5" class="hoverable1" y="1332" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_6" class="hoverable1" y="1332" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_7" class="hoverable1" y="1362" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_8" class="hoverable1" y="1362" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BR_9" class="hoverable1" y="1362" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_1" class="hoverable1" y="1302" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_2" class="hoverable1" y="1302" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_3" class="hoverable1" y="1302" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_4" class="hoverable1" y="1332" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_5" class="hoverable1" y="1332" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_6" class="hoverable1" y="1332" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_7" class="hoverable1" y="1362" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_8" class="hoverable1" y="1362" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_1_facet_BL_9" class="hoverable1" y="1362" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                    </g>
+                    <g id="cqrtable_domain_2_facet" stroke="#000" stroke-opacity="0" stroke-width="0">
+                        <rect id="cqrtable_domain_2_facet_TL_1" class="hoverable2" y="1212" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_2" class="hoverable2" y="1212" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_3" class="hoverable2" y="1212" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_4" class="hoverable2" y="1242" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_5" class="hoverable2" y="1242" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_6" class="hoverable2" y="1242" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_7" class="hoverable2" y="1272" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_8" class="hoverable2" y="1272" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TL_9" class="hoverable2" y="1272" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_1" class="hoverable2" y="1212" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_2" class="hoverable2" y="1212" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_3" class="hoverable2" y="1212" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_4" class="hoverable2" y="1242" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_5" class="hoverable2" y="1242" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_6" class="hoverable2" y="1242" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_7" class="hoverable2" y="1272" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_8" class="hoverable2" y="1272" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_TR_9" class="hoverable2" y="1272" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_1" class="hoverable2" y="1302" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_2" class="hoverable2" y="1302" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_3" class="hoverable2" y="1302" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_4" class="hoverable2" y="1332" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_5" class="hoverable2" y="1332" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_6" class="hoverable2" y="1332" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_7" class="hoverable2" y="1362" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_8" class="hoverable2" y="1362" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BR_9" class="hoverable2" y="1362" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_1" class="hoverable2" y="1302" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_2" class="hoverable2" y="1302" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_3" class="hoverable2" y="1302" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_4" class="hoverable2" y="1332" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_5" class="hoverable2" y="1332" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_6" class="hoverable2" y="1332" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_7" class="hoverable2" y="1362" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_8" class="hoverable2" y="1362" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_2_facet_BL_9" class="hoverable2" y="1362" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                    </g>
+                    <g id="cqrtable_domain_3_facet" stroke="#000" stroke-opacity="0" stroke-width="0">
+                        <rect id="cqrtable_domain_3_facet_TL_1" class="hoverable3" y="1452" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_2" class="hoverable3" y="1452" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_3" class="hoverable3" y="1452" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_4" class="hoverable3" y="1482" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_5" class="hoverable3" y="1482" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_6" class="hoverable3" y="1482" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_7" class="hoverable3" y="1512" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_8" class="hoverable3" y="1512" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TL_9" class="hoverable3" y="1512" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_1" class="hoverable3" y="1452" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_2" class="hoverable3" y="1452" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_3" class="hoverable3" y="1452" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_4" class="hoverable3" y="1482" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_5" class="hoverable3" y="1482" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_6" class="hoverable3" y="1482" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_7" class="hoverable3" y="1512" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_8" class="hoverable3" y="1512" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_TR_9" class="hoverable3" y="1512" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_1" class="hoverable3" y="1542" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_2" class="hoverable3" y="1542" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_3" class="hoverable3" y="1542" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_4" class="hoverable3" y="1572" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_5" class="hoverable3" y="1572" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_6" class="hoverable3" y="1572" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_7" class="hoverable3" y="1602" x="480" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_8" class="hoverable3" y="1602" x="510" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BR_9" class="hoverable3" y="1602" x="540" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_1" class="hoverable3" y="1542" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_2" class="hoverable3" y="1542" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_3" class="hoverable3" y="1542" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_4" class="hoverable3" y="1572" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_5" class="hoverable3" y="1572" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_6" class="hoverable3" y="1572" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_7" class="hoverable3" y="1602" x="390" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_8" class="hoverable3" y="1602" x="420" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_3_facet_BL_9" class="hoverable3" y="1602" x="450" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                    </g>
+                    <g id="cqrtable_domain_4_facet" stroke="#000" stroke-opacity="0" stroke-width="0">
+                        <rect id="cqrtable_domain_4_facet_TL_1" class="hoverable4" y="1452" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_2" class="hoverable4" y="1452" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_3" class="hoverable4" y="1452" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_4" class="hoverable4" y="1482" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_5" class="hoverable4" y="1482" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_6" class="hoverable4" y="1482" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_7" class="hoverable4" y="1512" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_8" class="hoverable4" y="1512" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TL_9" class="hoverable4" y="1512" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_1" class="hoverable4" y="1452" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_2" class="hoverable4" y="1452" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_3" class="hoverable4" y="1452" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_4" class="hoverable4" y="1482" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_5" class="hoverable4" y="1482" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_6" class="hoverable4" y="1482" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_7" class="hoverable4" y="1512" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_8" class="hoverable4" y="1512" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_TR_9" class="hoverable4" y="1512" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_1" class="hoverable4" y="1542" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_2" class="hoverable4" y="1542" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_3" class="hoverable4" y="1542" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_4" class="hoverable4" y="1572" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_5" class="hoverable4" y="1572" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_6" class="hoverable4" y="1572" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_7" class="hoverable4" y="1602" x="240" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_8" class="hoverable4" y="1602" x="270" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BR_9" class="hoverable4" y="1602" x="300" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_1" class="hoverable4" y="1542" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_2" class="hoverable4" y="1542" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_3" class="hoverable4" y="1542" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_4" class="hoverable4" y="1572" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_5" class="hoverable4" y="1572" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_6" class="hoverable4" y="1572" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_7" class="hoverable4" y="1602" x="150" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_8" class="hoverable4" y="1602" x="180" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                        <rect id="cqrtable_domain_4_facet_BL_9" class="hoverable4" y="1602" x="210" height="30" width="30" fill="#fff" opacity="0" onclick="setDomain(this)"/>
+                    </g>
+                    <g id="cqrtable_arealines_1" fill="none" stroke-width="3">
+                        <path id="cqrtable_arealines_1_line_1" d="M240 1212v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_1_line_2" d="M258 1302h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_1_line_3" d="M240 1320v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_1_line_4" d="M150 1302h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <rect id="cqrtable_arealines_1_box_1" y="1212" x="150" height="180" width="180" stroke="#000"/>
+                        <rect id="cqrtable_arealines_1_box_2" y="1242" x="180" height="120" width="120" stroke="#ccc"/>
+                        <rect id="cqrtable_arealines_1_box_3" y="1272" x="210" height="60" width="60" stroke="#ccc"/>
+                    </g>
+                    <g id="cqrtable_arealines_2" fill="none" stroke-width="3">
+                        <path id="cqrtable_arealines_2_line_1" d="M480 1212v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_2_line_2" d="M498 1302h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_2_line_3" d="M480 1320v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_2_line_4" d="M390 1302h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <rect id="cqrtable_arealines_2_box_1" y="1212" x="390" height="180" width="180" stroke="#000"/>
+                        <rect id="cqrtable_arealines_2_box_2" y="1242" x="420" height="120" width="120" stroke="#ccc"/>
+                        <rect id="cqrtable_arealines_2_box_3" y="1272" x="450" height="60" width="60" stroke="#ccc"/>
+                    </g>
+                    <g id="cqrtable_arealines_3" fill="none" stroke-width="3">
+                        <path id="cqrtable_arealines_3_line_1" d="M480 1452v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_3_line_2" d="M498 1542h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_3_line_3" d="M480 1560v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_3_line_4" d="M390 1542h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <rect id="cqrtable_arealines_3_box_1" y="1452" x="390" height="180" width="180" stroke="#000"/>
+                        <rect id="cqrtable_arealines_3_box_2" y="1482" x="420" height="120" width="120" stroke="#ccc"/>
+                        <rect id="cqrtable_arealines_3_box_3" y="1512" x="450" height="60" width="60" stroke="#ccc"/>
+                    </g>
+                    <g id="cqrtable_arealines_4" fill="none" stroke-width="3">
+                        <path id="cqrtable_arealines_4_line_1" d="M240 1452v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_4_line_2" d="M258 1542h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_4_line_3" d="M240 1560v72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <path id="cqrtable_arealines_4_line_4" d="M150 1542h72" fill-rule="evenodd" stroke="#ccc" stroke-linejoin="round"/>
+                        <rect id="cqrtable_arealines_4_box_1" y="1452" x="150" height="180" width="180" stroke="#000"/>
+                        <rect id="cqrtable_arealines_4_box_2" y="1482" x="180" height="120" width="120" stroke="#ccc"/>
+                        <rect id="cqrtable_arealines_4_box_3" y="1512" x="210" height="60" width="60" stroke="#ccc"/>
+                    </g>
+                    <g id="cqrtable_info_1" text-anchor="middle">
+                        <text id="cqrtable_info_1_text_1" class="infoChart emphasize" y="1202" x="240">
+                            <tspan id="cqrtable_info_1_span_1" y="1202" x="240">FANTAZIJA</tspan>
+                        </text>
+                        <text id="cqrtable_info_1_text_2" class="infoChart emphasize vertical" y="1302" x="344.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_1_span_2" y="1302" x="344.5">RAZISKOVANJE</tspan>
+                        </text>
+                        <text id="cqrtable_info_1_text_3" class="infoChart emphasize" y="1412" x="240">
+                            <tspan id="cqrtable_info_1_span_3" y="1412" x="240">REALIZEM</tspan>
+                        </text>
+                        <text id="cqrtable_info_1_text_4" class="infoChart emphasize vertical" y="1302" x="134.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_1_span_4" y="1302" x="134.5">KREATIVNOST</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_info_2" text-anchor="middle">
+                        <text id="cqrtable_info_2_text_1" class="infoChart emphasize" y="1202" x="480">
+                            <tspan id="cqrtable_info_2_span_1" y="1202" x="480">IZKUŠEN</tspan>
+                        </text>
+                        <text id="cqrtable_info_2_text_2" class="infoChart emphasize vertical" y="1302" x="584.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_2_span_2" y="1302" x="584.5">DEJAVEN</tspan>
+                        </text>
+                        <text id="cqrtable_info_2_text_3" class="infoChart emphasize" y="1412" x="480">
+                            <tspan id="cqrtable_info_2_span_3" y="1412" x="480">NEIZKUŠEN</tspan>
+                        </text>
+                        <text id="cqrtable_info_2_text_4" class="infoChart emphasize vertical" y="1302" x="374.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_2_span_4" y="1302" x="374.5">NEDEJAVEN</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_info_3" text-anchor="middle">
+                        <text id="cqrtable_info_3_text_1" class="infoChart emphasize" y="1442" x="480">
+                            <tspan id="cqrtable_info_3_span_1" y="1442" x="480">VEČIGRALSKA</tspan>
+                        </text>
+                        <text id="cqrtable_info_3_text_2" class="infoChart emphasize vertical" y="1542" x="584.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_3_span_2" y="1542" x="584.5">NAPETA</tspan>
+                        </text>
+                        <text id="cqrtable_info_3_text_3" class="infoChart emphasize" y="1652" x="480">
+                            <tspan id="cqrtable_info_3_span_3" y="1652" x="480">ENOIGRALSKA</tspan>
+                        </text>
+                        <text id="cqrtable_info_3_text_4" class="infoChart emphasize vertical" y="1542" x="374.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_3_span_4" y="1542" x="374.5">UMIRJENA</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_info_4" text-anchor="middle">
+                        <text id="cqrtable_info_4_text_1" class="infoChart emphasize" y="1442" x="240">
+                            <tspan id="cqrtable_info_4_span_1" y="1442" x="240">SODELOVANJE</tspan>
+                        </text>
+                        <text id="cqrtable_info_4_text_2" class="infoChart emphasize vertical" y="1542" x="344.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_4_span_2" y="1542" x="344.5">KONTEKST</tspan>
+                        </text>
+                        <text id="cqrtable_info_4_text_3" class="infoChart emphasize" y="1652" x="240">
+                            <tspan id="cqrtable_info_4_span_3" y="1652" x="240">TEKMOVANJE</tspan>
+                        </text>
+                        <text id="cqrtable_info_4_text_4" class="infoChart emphasize vertical" y="1542" x="134.5" writing-mode="tb-rl">
+                            <tspan id="cqrtable_info_4_span_4" y="1542" x="134.5">MEHANIKE</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_novelty_1">
+                        <rect id="cqrtable_box_novelty_1_box" class="fillable1" y="1182" x="120" height="30" width="30" opacity="1" fill="#5aa02c" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_novelty_1_text" class="infoChart emphasize" y="1202" x="134.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_novelty_1_span" y="1202" x="134.5">N</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_novelty_2">
+                        <rect id="cqrtable_box_novelty_2_box" class="fillable1" y="1392" x="330" height="30" width="30" opacity="1" fill="#5aa02c" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_novelty_2_text" class="infoChart emphasize" y="1412" x="344.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_novelty_2_span" y="1412" x="344.5" >N</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_challenge_1">
+                        <rect id="cqrtable_box_challenge_1_box" class="fillable2" y="1182" x="570" height="30" width="30" opacity="1" fill="#0066ff" stroke="#000" stroke-width="3"/>
+                        <text  id="cqrtable_box_challenge_1_text" class="infoChart emphasize" y="1202" x="584.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_challenge_1_span" y="1202" x="584.5">C</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_challenge_2">
+                        <rect id="cqrtable_box_challenge_2_box" class="fillable2" y="1392" x="360" height="30" width="30" opacity="1" fill="#0066ff" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_challenge_2_text" class="infoChart emphasize" y="1412"x="374.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_challenge_2_span" y="1412" x="374.5">C</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_stimulation_1">
+                        <rect id="cqrtable_box_stimulation_1_box" class="fillable3" y="1632" x="570" height="30" width="30" opacity="1" fill="#ff6600" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_stimulation_1_text" class="infoChart emphasize" y="1652" x="584.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_stimulation_1_span" y="1652" x="584.5">S</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_stimulation_2">
+                        <rect id="cqrtable_box_stimulation_2_box" class="fillable3" y="1422" x="360" height="30" width="30" opacity="1" fill="#ff6600" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_stimulation_2_text" class="infoChart emphasize" y="1442" x="374.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_stimulation_2_span" y="1442" x="374.5">S</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_harmony_1">
+                        <rect id="cqrtable_box_harmony_1_box" class="fillable4" y="1632" x="120" height="30" width="30" opacity="1" fill="#944dff" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_harmony_1_text" class="infoChart emphasize" y="1652" x="134.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_harmony_1_span" y="1652" x="134.5">H</tspan>
+                        </text>
+                    </g>
+                    <g id="cqrtable_box_harmony_2">
+                        <rect id="cqrtable_box_harmony_2_box" class="fillable4" y="1422" x="330" height="30" width="30" opacity="1" fill="#944dff" stroke="#000" stroke-width="3"/>
+                        <text id="cqrtable_box_harmony_2_text" class="infoChart emphasize" y="1442" x="344.5" text-anchor="middle">
+                            <tspan id="cqrtable_box_harmony_2_span" y="1442" x="344.5">H</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </body>
+    <footer>
+        <script src="ConceptLogic.js"></script>
+        <script src="ListLogic.js"></script>
+    </footer>
+</html>

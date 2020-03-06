@@ -1,0 +1,57 @@
+/* default css*/
+#testarea {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+@media print {
+    #testarea {
+        display: none;
+    }
+}
+
+h3.tacentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.talist
+{
+    height: 120px; 
+    width: 300px;
+    padding-left: 5px;
+    margin-top: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+li {
+    list-style: none;
+}
+li.tachosen {
+    background-color: greenyellow;
+}
+span.tadisabled {
+    pointer-events: none;
+}
+.tablock {
+    display: inline-block;
+    width: 300px;
+    border-width: 8px;
+    border-radius: 15px;
+    border-style: ridge none ridge;
+    margin-bottom: 5px;
+}
+.tablock.taclass {
+    border-color: #6b921f;
+}
+.tablock.tacont {
+    border-color: #0f740a;
+}
+.tablock.taform {
+    border-color: #243e79;
+}
+.tablock.tatargt {
+    border-color: #b3262a;
+}

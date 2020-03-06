@@ -1,0 +1,186 @@
+/* default css*/
+svg {
+    margin: 3px;
+}
+svg.page {
+    width: 45%;
+	min-width: 850px;
+}
+rect.paper {
+    fill: #ffffff;
+    opacity: 1;
+    stroke: #000000a6;
+    stroke-width: 1.5;
+    filter: drop-shadow(5px 5px #000000);
+}
+
+/* print specific css */
+@media print {
+    svg {
+        margin: 0px;
+    }
+    svg.page {
+        width: auto;
+		min-width: auto;
+    }
+    svg.game {
+        display: none;
+    }
+    rect.paper {
+        fill: #ffffff;
+        opacity: 1;
+        stroke: none;
+        stroke-width: 1.5;
+        filter: none;
+    }
+}
+
+/* **************************** */
+/* *** PAGE DOCUMENT STYLES *** */
+/* **************************** */
+
+text {
+    font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;    /*for all text*/
+    letter-spacing: 0em;                                        /*for all text*/          
+    word-spacing: 0em;                                          /*for all text*/
+    font-variant-ligatures: normal;                             /*for all text*/
+    font-variant-caps: normal;                                  /*for all text*/
+    font-variant-numeric: normal;                               /*for all text*/
+    font-feature-settings: normal;                              /*for all text*/
+}
+text.mTitle {
+    line-height: 0%;    /*for main title text*/
+    font-weight: 700;   /*for main title text*/
+    font-size: 1.875em; /*for main title text (30px)*/
+    text-align: center; /*equivalent to svg text-anchor middle*/
+}
+text.sTitle {
+    line-height: 0%;    /*for sub title text*/
+    font-weight: 400;   /*for sub title text*/
+    font-size: 1.587em; /*for sub title text (25px)*/
+    text-align: start;  /*equivalent to svg text-anchor start*/
+}
+text.info {
+    line-height: 0%;    /*for normal text*/
+    font-weight: 400;   /*for normal text*/
+    font-size: 1.313em; /*for normal text (21px)*/
+    text-align: start;  /*equivalent to svg text-anchor start*/
+}
+text.infoChart {
+    line-height: 0%;    /*for chart text*/
+    font-weight: 400;   /*for chart text*/
+    font-size: 0.813em; /*for chart text (13px)*/
+    text-align: center; /*equivalent to svg text-anchor middle*/
+}
+text.description {
+    line-height: 0%;    /*for normal text*/
+    font-weight: 400;   /*for normal text*/
+    font-size: 1.313em; /*for normal text (21px)*/
+    text-align: center; /*equivalent to svg text-anchor middle*/
+}
+text.plain {
+    line-height: 0%;    /*for normal text*/
+    font-weight: 400;   /*for normal text*/
+    font-size: 1.313em; /*for normal text (21px)*/
+    text-align: start;  /*equivalent to svg text-anchor start*/
+}
+text.small {
+    font-size: 1.063em; /*for small text (17px)*/
+}
+text.smallest {
+    font-size: 0.813em; /*for chart text (13px)*/
+}
+text.emphasize {
+    font-weight: 700;   /*for emphasize text*/
+}
+text.alignEnd {
+    text-align: end;   /*equivalent to svg text-anchor end*/
+}
+text.vertical {
+    writing-mode:tb-rl; /*for vertical text*/
+    /*equivalent to svg writing-mode tb-rl*/
+}
+tspan {
+    line-height:125%;   /*for all text spans*/
+}
+textarea {
+    width: 100%;                    /*cover full width*/
+    height: 100%;                   /*cover full height*/
+    outline: none;                  /*disable browser prefixes*/
+    resize: none;                   /*disable browser prefixes*/
+    border: none;                   /*disable browser prefixes*/
+    border-radius: 4px;             /*beautify area*/
+    padding: 14px 20px;             /*beautify area*/
+    box-sizing: border-box;         /*beautify area*/
+    background-color: #ffffff00;  /*disable browser prefixes*/
+    overflow: hidden;               /*disable browser prefixes*/
+}
+textarea.plain {
+    font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;    /*for all text*/
+    letter-spacing: 0em;                                        /*for all text*/          
+    word-spacing: 0em;                                          /*for all text*/
+    font-variant-ligatures: normal;                             /*for all text*/
+    font-variant-caps: normal;                                  /*for all text*/
+    font-variant-numeric: normal;                               /*for all text*/
+    font-feature-settings: normal;                              /*for all text*/
+    line-height: 125%;                                         /*for area text*/
+    font-weight: 400;                                          /*for area text*/
+    font-size: 1.125em;                /*default font size for all text (18px)*/
+    text-align: start;                   /*equivalent to svg text-anchor start*/
+    font-style: normal;                                         /*for all text*/
+}
+textarea.focus {
+    font-style: italic; /*for focused text*/
+}
+textarea.emphasize {
+    font-weight: 700;   /*for emphasize text*/
+}
+textarea.content {
+    padding: 0px 4px;   /*for content area*/
+    /*aliging text to justify for textarea only works in chrome*/
+}
+textarea.line {
+    font-size: 1.188em; /*for line area (19px)*/
+    padding: 0px;       /*for line area*/
+    text-align: center; /*equivalent to svg text-anchor center*/
+}
+textarea.info {
+    line-height: 1.667em;   /*for line area (30px)*/
+    padding: 0px;           /*for line area*/
+}
+rect.fillable1 {
+    fill: #8dd35e;      /*original VandenBerghe MID*/
+    /*fill: #5aa02c;*/      /*original VandenBerghe DARK*/
+}
+rect.fillable2 {
+    fill: #80b3ff;      /*original VandenBerghe MID*/
+    /*fill: #0066ff;*/      /*original VandenBerghe DARK*/
+}
+rect.fillable3 {
+    fill: #ffa366;      /*original VandenBerghe MID*/
+    /*fill: #ff6600;*/      /*original VandenBerghe DARK*/
+}
+rect.fillable4 {
+    fill: #b380ff;      /*original VandenBerghe MID*/
+    /*fill: #944dff;*/      /*original VandenBerghe DARK*/
+}
+rect.hoverable1:hover {
+    /*fill: #8dd35e;*/      /*original VandenBerghe MID*/
+    fill: #5aa02c;      /*original VandenBerghe DARK*/
+    opacity: 0.8;
+}
+rect.hoverable2:hover {
+    /*fill: #80b3ff;*/      /*original VandenBerghe MID*/
+    fill: #0066ff;      /*original VandenBerghe DARK*/
+    opacity: 0.8;
+}
+rect.hoverable3:hover {
+    /*fill: #ffa366;*/      /*original VandenBerghe MID*/
+    fill: #ff6600;      /*original VandenBerghe DARK*/
+    opacity: 0.8;
+}
+rect.hoverable4:hover {
+    /*fill: #b380ff;*/     /*original VandenBerghe MID*/
+    fill: #944dff;      /*original VandenBerghe DARK*/
+    opacity: 0.8;
+}
