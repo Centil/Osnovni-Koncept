@@ -12,7 +12,7 @@ let ll_tgenres = [["Priložnostna", "Casual"], ["Gradbena", "Construction"], ["B
                   ["Ploščadna", "Platform"], ["Hitri dogodki", "Quick time events"], ["Dirkačina", "Racing"], ["Realno časovna", "Realtime"], 
                   ["Ritem in bit", "Rythem"], ["Streljačine", "Shooter"], ["Skrivalne", "Stealth"], ["Pripoved", "Storytelling"], 
                   ["Taktična", "Tactical"]];
-let ll_themes = [["Živali", "Animals"], ["Komičnost", "Comedy"], ["Kultura", "Culture"], ["Detektivka", "Detective"], ["Ekspidicija", "Expidition"], 
+let ll_themes = [["Živali", "Animals"], ["Komičnost", "Comedy"], ["Kultura", "Culture"], ["Detektivka", "Detective"], ["Ekspedicija", "Expidition"], 
                  ["Evolucija", "Evolution"], ["Fantazija", "Fantasy"], ["Prihodnost", "Future"], ["Grozljivka", "Horror"], ["Vdori", "Incursion"], 
                  ["Stroji", "Machines"], ["Prevozna sredstva", "Means of transport"], ["Srednji vek", "Midival Ages"], ["Mogočnost", "Mightiness"], ["Rudarjenje", "Mining"], 
                  ["Narava", "Nature"], ["Objekti", "Objects"], ["Preteklost", "Past"], ["Sedanjost", "Present"], ["Prerokba", "Proficy"], 
@@ -26,7 +26,7 @@ let ll_motives = [["Sposobnosti", "Abilities"], ["Arhitektura", "Arhitecture"], 
                   ["Politični", "Political"], ["Moč", "Power"], ["Poklici", "Professions"], ["Obljuba", "Promise"], ["Iskanje", "Quest"], 
                   ["Rekreacija", "Recreation"], ["Surovine", "Resources"], ["Znanost", "Science"], ["Vraževerje", "Superstition"], ["Vozila", "Vehicles"], 
                   ["Bogastvo", "Wealth"], ["Orožje", "Weapons"]];
-let ll_pstyles = [["Samostojni", "Solo"], ["Tekmovalni", "Competative"], ["Izzvalni", "Challenger"], ["Prvenstveni", "Championship"], 
+let ll_pstyles = [["Samostojni", "Solo"], ["Tekmovalni", "Competative"], ["Izzvani", "Challenger"], ["Prvenstveni", "Championship"], 
                  ["Turnirski", "Tournament"], ["Sodelovalni", "Cooperative"], ["Ekipni", "Team"]];
 let ll_intacts = [["Izzivi", "Challenges"], ["Misije", "Missions"], ["Runde", "Rounds"], ["Cilji", "Goals"], 
                   ["Pogoji", "Objectives"], ["Izločanje", "Elimination"], ["Odprti svet", "Sandbox"]];
